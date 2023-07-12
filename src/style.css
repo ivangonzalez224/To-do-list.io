@@ -42,15 +42,22 @@ body {
   border-bottom: 1px solid #c3c3c3;
 }
 
-#add_taskInput {
+.input_text {
   border: none;
   outline: none;
   font-size: 17px;
   font-style: italic;
 }
 
+#add_taskInput {
+  font-style: italic;
+  padding-left: 2px;
+  caret-color: #000;
+}
+
 .title_container,
-.add_task_container {
+.add_task_container,
+.task_container {
   display: flex;
   align-items: center;
   justify-content: space-between;

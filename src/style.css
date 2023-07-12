@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+
+body {
+  background-color: #e9e9e9;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e9e9;
+  width: 100%;
+  height: 100%;
+}
+
+.main_placeholder {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 765px;
+  background-color: #fff;
+}
+
+.main_placeholder li {
+  display: flex;
+  justify-content: center;
+  background-color: #e2e2e2;
+  list-style: none;
+}
+
+.main_placeholder li a {
+  color: #909090;
+  text-decoration: none;
+}
+
+.container {
+  padding: 2% 2%;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.input_text {
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-style: italic;
+}
+
+#add_taskInput {
+  font-style: italic;
+  padding-left: 2px;
+  caret-color: #000;
+}
+
+.title_container,
+.add_task_container,
+.task_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.material-icons {
+  color: #b1b1b1;
+}
+
+#add_taskInput:placeholder-shown {
+  font-style: italic;
+  color: #eaeaea;
+}

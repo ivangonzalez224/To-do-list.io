@@ -10,7 +10,8 @@ mainTitle.innerHTML = _.join(["Today's", 'to do'], ' ');
 
 // retrieve tasks data and display the task list
 window.onload = () => {
-  if (localStorage.getItem('dataTasks') !== 'undefined' || localStorage.getItem('dataTasks') !== 'null') {
+  const dataStorage = localStorage.getItem('dataTasks');
+  if (dataStorage !== 'undefined' && dataStorage !== null) {
     dataTask = JSON.parse(localStorage.getItem('dataTasks'));
     createTask(0, dataTask.length, dataTask);
   }

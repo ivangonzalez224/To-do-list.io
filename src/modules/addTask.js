@@ -4,7 +4,10 @@ import createTask from './createTask.js';
 let dataTaskAdd = [];
 // add a new task
 const addTask = () => {
-  dataTaskAdd = JSON.parse(localStorage.getItem('dataTasks'));
+  const storageData = localStorage.getItem('dataTasks');
+  if (storageData) {
+    dataTaskAdd = JSON.parse(storageData);
+  }
   const lengthList = dataTaskAdd.length + 1;
   dataTaskAdd.push({ description: addTaskInput.value, completed: false, index: lengthList });
   addTaskInput.value = '';

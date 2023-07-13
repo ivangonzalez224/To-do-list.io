@@ -47,12 +47,16 @@ body {
   outline: none;
   font-size: 17px;
   font-style: italic;
+  background-color: #0000;
+  margin-left: 1%;
+  width: 90%;
 }
 
 #add_taskInput {
   font-style: italic;
   padding-left: 2px;
   caret-color: #000;
+  background-color: #0000;
 }
 
 .title_container,
@@ -65,9 +69,18 @@ body {
 
 .material-icons {
   color: #b1b1b1;
+  cursor: pointer;
 }
 
 #add_taskInput:placeholder-shown {
   font-style: italic;
   color: #eaeaea;
+}
+
+#btn_move {
+  cursor: move;
+}
+
+.leftTask_container {
+  width: 100%;
 }

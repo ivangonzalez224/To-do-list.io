@@ -9,6 +9,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -51,6 +52,14 @@ In this project we use HTML, CSS, JavaScript, and webpack to build and bundle th
 - Use flexbox in order to lay out the elements on the page.
 - Use webpack in order to bundle the project.
 - Set up a linter for the project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+ The link to the project deployed:
+
+- [Live Demo Link](https://ivangonzalez224.github.io/To-do-list.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

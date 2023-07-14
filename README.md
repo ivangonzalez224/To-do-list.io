@@ -9,7 +9,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -55,17 +54,10 @@ In this project we use HTML, CSS, JavaScript, and webpack to build and bundle th
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
- The link to the project deployed:
-
-- Coming soon...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-In this project it is used use flexbox and media queries to build a responsive to do list app for mobile and desktop website. And it is used webpack to bundle the project.
+In this project it is used flexbox to lay out the elements on the page. And it is used webpack to bundle the project.
 
 ### Setup
 
@@ -90,7 +82,7 @@ In order to run this project you need:
   
 ### Install
 
-This project does not require installation. Just clone the repository to your local machine and open the HTML file in a browser.
+This project does not require installation. Just clone the repository to your local machine.
 Even though, for general purposes, Install this project with:
 ```sh
   cd my-folder
@@ -100,8 +92,7 @@ Even though, for general purposes, Install this project with:
 ### Usage
 
 To run the project, do the following:
-- After cloning the repository to your local computer, open the folder in a code editor.
-- Find the path of the index.html file and open it in your preferred browser.
+- Run `npm run start` or `npm start` to open the project in your browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

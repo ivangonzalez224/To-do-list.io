@@ -1,5 +1,6 @@
 import { listPlaceholder } from './elements.js';
 import { updateTaskDescrip, deleteTask } from './updateRemove.js';
+import statusTask from './changeStatus.js';
 
 let dataTaskCreate = [];
 // create card(s) for new task(s)
@@ -21,6 +22,13 @@ const createTask = (start, end, arr) => {
     taskMoveBtn.className = 'material-icons';
     taskMoveBtn.id = 'btn_move';
     taskMoveBtn.innerText = 'more_vert';
+    if (taskCheck.checked === true) {
+      taskDescrip.style.textDecoration = 'line-through';
+      taskDescrip.style.color = '#a3a3a3';
+    } else {
+      taskDescrip.style.textDecoration = 'none';
+      taskDescrip.style.color = '#000';
+    }
     taskDescrip.addEventListener('input', () => {
       updateTaskDescrip(i, taskDescrip.value);
     });
@@ -41,6 +49,11 @@ const createTask = (start, end, arr) => {
       }
       taskMoveBtn.innerText = 'more_vert';
       taskMoveBtn.style.cursor = 'move';
+    });
+    taskCheck.addEventListener('change', () => {
+      const indexCheck = Array.from(taskContainer.parentNode.children).indexOf(taskContainer);
+      const checkStatus = taskCheck.checked;
+      statusTask(taskDescrip, indexCheck, checkStatus);
     });
     listPlaceholder.appendChild(taskContainer);
     taskContainer.appendChild(leftTaskDiv);

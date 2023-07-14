@@ -2,7 +2,10 @@ import _ from 'lodash';
 import './style.css';
 import createTask from './modules/createTask.js';
 import addTask from './modules/addTask.js';
-import { mainTitle, addTaskInput, btnEnter } from './modules/elements.js';
+import {
+  mainTitle, addTaskInput, btnEnter, btnClearAll,
+} from './modules/elements.js';
+import { clearAll } from './modules/changeStatus.js';
 
 let dataTask = [];
 
@@ -25,4 +28,8 @@ addTaskInput.addEventListener('keyup', (event) => {
 
 btnEnter.addEventListener('click', () => {
   addTask();
+});
+
+btnClearAll.addEventListener('click', () => {
+  clearAll();
 });

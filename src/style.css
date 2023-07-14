@@ -37,6 +37,11 @@ body {
   text-decoration: none;
 }
 
+.main_placeholder li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
 .container {
   padding: 2% 2%;
   border-bottom: 1px solid #c3c3c3;

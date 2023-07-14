@@ -26,8 +26,8 @@ const createTask = (start, end, arr) => {
       taskDescrip.style.textDecoration = 'line-through';
       taskDescrip.style.color = '#a3a3a3';
     } else {
-        taskDescrip.style.textDecoration = 'none';
-        taskDescrip.style.color = '#000';
+      taskDescrip.style.textDecoration = 'none';
+      taskDescrip.style.color = '#000';
     }
     taskDescrip.addEventListener('input', () => {
       updateTaskDescrip(i, taskDescrip.value);

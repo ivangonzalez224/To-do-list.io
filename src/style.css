@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
 
+:root {
+  --grayColor: #e9e9e9;
+  --transparentColor: #0000;
+  --blackColor: #000;
+}
+
 body {
-  background-color: #e9e9e9;
+  background-color: var(--grayColor);
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   width: 100vw;
@@ -12,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e9e9e9;
+  background-color: var(--grayColor);
   width: 100%;
   height: 100%;
 }
@@ -38,7 +44,7 @@ body {
 }
 
 .main_placeholder li a:hover {
-  color: #000;
+  color: var(--blackColor);
   text-decoration: underline;
 }
 
@@ -52,7 +58,7 @@ body {
   outline: none;
   font-size: 17px;
   font-style: italic;
-  background-color: #0000;
+  background-color: var(--transparentColor);
   margin-left: 1%;
   width: 90%;
 }
@@ -60,8 +66,8 @@ body {
 #add_taskInput {
   font-style: italic;
   padding-left: 2px;
-  caret-color: #000;
-  background-color: #0000;
+  caret-color: var(--blackColor);
+  background-color: var(--transparentColor);
 }
 
 .title_container,
